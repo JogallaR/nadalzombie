@@ -1,0 +1,543 @@
+  /* ===============================
+    FONTS ORIGINALS
+  ================================ */
+  @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Mountains+of+Christmas:wght@400;700&family=Nosifer&display=swap');
+
+  .mountains-of-christmas-regular {
+    font-family: "Mountains of Christmas", serif;
+  }
+  .mountains-of-christmas-bold {
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 700;
+  }
+  .nosifer-regular {
+    font-family: "Nosifer", sans-serif;
+  }
+  .creepster-regular {
+    font-family: "Creepster", system-ui;
+  }
+
+  /* ===============================
+    RESET
+  ================================ */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ===============================
+    BODY + BACKGROUND EFECTE
+  ================================ */
+  body {
+    color:#01fa09;
+    text-shadow: 2px 2px 0 #000000;
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: center;
+    background-image: url('fons.jpg');
+    
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Mountains of Christmas", serif;
+  }
+
+  mark {
+    background: none;
+    color: inherit;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('fons.jpg') center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+
+  #personatges td code{
+    font-family: "Creepster", system-ui;
+    font-size: 30px;
+    color: #660000;
+    text-shadow: 2px 2px 0 #000000;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  /* ===============================
+    HEADER (FONS PER AL TÍTOL)
+  ================================ */
+  header h1,
+  header span {
+    display: inline-block;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+  }
+
+  header h1{
+    font-weight: 800;
+    font-size: 80px;
+    color: #2cff33;
+    text-shadow: 4px 4px 0 #000000;
+    padding: 70px 40px 20px 40px;
+  }
+
+  header span{
+    font-family: "Nosifer", system-ui;
+    font-size: 70px;
+    color: #660000;
+    text-shadow: 4px 4px 0 #000000;
+    animation: moure-h1 3s ease-in-out infinite alternate;
+  }
+
+  header .tagline {
+    display: block;
+    font-family: "Creepster", system-ui;
+    font-size: 30px;
+    color: #2cff33;
+    margin-top: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 0;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    
+  }
+
+  /* ===============================
+    MENÚ
+  ================================ */
+  .main-nav {
+    font-family: "Creepster", system-ui;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 40px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 0;
+    border-radius: 12px;
+    display: inline-block;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .main-nav li:hover {
+    transform: scale(1.1);
+  }
+
+  .main-nav li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: #01fa09;
+    transition: width 0.3s ease;
+    margin-top: 5px;
+    border-radius: 2px;
+  }
+
+  .main-nav li:hover::after {
+    width: 100%;
+  }
+
+  .main-nav a {
+    color: #660000;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 5px 8px;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 0 #000000;
+  }
+
+  .main-nav a:hover {
+    color: #2cff33;
+    text-shadow: 2px 2px 0 #000000;
+  }
+
+  /* ===============================
+    GRID PRINCIPAL
+  ================================ */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  #introduccio {
+    grid-column: span 2;
+  }
+
+  /* ===============================
+    SECCIONS
+  ================================ */
+  h2{
+    font-family: "Creepster", system-ui;
+    font-size: 50px;
+    color: #660000;
+    text-shadow: 2px 2px 0 #000000;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 0;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+  }
+
+    h3{
+    color: #660000;
+    text-transform: uppercase;
+    font-size: 30px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 0;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  strong{
+    font-family: "Creepster", system-ui;
+    font-size: 20px;
+    color: #660000;
+    text-shadow: 2px 2px 0 #000000;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  section {
+    background: rgba(0,0,0,0.35);
+    border-radius: 12px;
+    padding: 25px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.45);
+  }
+
+  section li{
+    text-align: left;
+    margin: 20px;
+    list-style: none;
+  }
+
+  #personatges thead{
+  text-transform: uppercase;
+  background-color: #660000;   /* fons lleuger per headers */
+  font-weight: bold;
+  box-shadow: inset 0 0 10px #000;
+  }
+
+  #personatges table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+
+  #personatges th, #personatges td {
+  border: 2px solid #000000;    /* línies internes */
+  padding: 8px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  }
+
+  #taula-risc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  }
+
+  #taula-risc th,
+  #taula-risc td {
+  border: 2px solid #000000;    /* línies internes */
+  padding: 8px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  }
+
+  #taula-risc th {
+  background-color: #660000;   /* fons lleuger per headers */
+  font-weight: bold;
+  box-shadow: inset 0 0 10px #000;
+  }
+
+  #taula-risc caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  }
+
+  section {
+    position: relative; /* necessari per al pseudo-element */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  section::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('sang.png') center/cover no-repeat;
+    opacity: 0;              /* invisible per defecte */
+    transition: opacity 0.5s ease;  /* animació suau */
+    pointer-events: none;    /* no interfereix amb el hover */
+    border-radius: 12px;     /* mateix radi que la secció */
+    z-index: 1;              /* per sobre del fons, sota contingut */
+  }
+
+  section:hover::after {
+    opacity: 0.6; /* apareix gradualment */
+  }
+
+  section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0,255,0,0.5);
+  }
+
+  /* ===============================
+    SIDEBAR
+  ================================ */
+  .sidebar {
+    background: rgba(0,0,0,0.35);
+    border-radius: 12px;
+    padding: 25px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.45);
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar {
+    position: relative; /* necessari per al pseudo-element */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .sidebar::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('sang.png') center/cover no-repeat;
+    opacity: 0;                /* invisible per defecte */
+    transition: opacity 0.5s ease; /* aparició suau */
+    pointer-events: none;      /* no interfereix amb hover ni clics */
+    border-radius: 12px;       /* igual que el sidebar */
+    z-index: 1;                /* per sobre del fons, sota contingut */
+  }
+
+  .sidebar:hover::after {
+    opacity: 0.5; /* apareix gradualment */
+  }
+
+  .sidebar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0,255,0,0.5);
+  }
+
+  .sidebar ul {
+    list-style: none;
+  }
+
+  .sidebar li {
+    margin: 15px 0;
+  }
+
+  /* ===============================
+    MAPA
+  ================================ */
+  .mapa {
+    width: 100%;
+    max-width: 600px;           /* ajustable per no ocupar tota la pantalla */
+    border-radius: 0.4em;
+    box-shadow: 10px 10px 5px #000;
+    margin: 0 auto 20px auto;   /* centrat i amb marge inferior */
+    transition: transform 0.5s ease, z-index 0s ease; 
+    display: block;
+    position: relative;
+    z-index: 1;                  /* per defecte */
+  }
+
+  .mapa:hover {
+    transform: scale(1.5);     /* fa zoom */
+    z-index: 10;                 /* primer pla quan fa zoom */
+  }
+
+  /* ===============================
+    CRÈDITS CENTRATS
+  ================================ */
+  #credits {
+    grid-column: 1 / -1;       /* ocupa totes dues columnes */
+    text-align: center;        /* centra el text */
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px;
+    color: #e0e0e0;
+    opacity: 0.9;
+    text-shadow: none;
+    margin-top: 40px;
+  }
+
+  /* ===============================
+    TUX BOTÓ AMB HOVER SUAU
+  ================================ */
+  .skip-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 80px;
+    height: 80px;
+    background: url('tux.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: balanceig-lent 3s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+
+  /* Balanceig constant amb escala base 1 */
+  @keyframes balanceig-lent {
+    0% { transform: scale(1) rotate(-3deg); }
+    50% { transform: scale(1) rotate(3deg); }
+    100% { transform: scale(1) rotate(-3deg); }
+  }
+
+  /* Hover: lleuger zoom i transparència */
+  .skip-link:hover {  
+    opacity: 0.8;
+  }
+
+  .site-footer {
+  margin-top: 60px;  /* ajusta la quantitat segons necessitis */
+  text-align: center; /* opcional: centra el text */
+  padding: 20px 0;   /* espai interior */
+  background-color: rgba(0,0,0,0.4); /* opcional: fons translúcid */
+  color: #e0e0e0;    /* color del text */
+  }
+
+  /* ===============================
+    ANIMACIÓ
+  ================================ */
+  @keyframes moure-h1 {
+    0% { transform: scale(1) translateY(0) rotate(0deg); }
+    50% { transform: scale(1.03) translateY(-3px) rotate(-1deg); }
+    100% { transform: scale(1) translateY(0) rotate(1deg); }
+  }
+
+  /* ===============================
+    RESPONSIVE
+  ================================ */
+  @media (max-width: 900px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+    #introduccio {
+      grid-column: span 1;
+    }
+    .sidebar {
+      grid-column: span 2;
+    }
+    #credits {
+      grid-column: span 1;
+    }
+  }
+
+  /* ============================================
+    NEU — 25 FLOCS — MILLORADA
+  ============================================ */
+
+  body::after,
+  body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+
+  background-image:
+    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'),
+    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'),
+    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'),
+    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'),
+    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png');
+
+  background-repeat: no-repeat;
+
+  background-size:
+    20px, 30px, 25px, 35px, 20px,
+    28px, 18px, 40px, 22px, 30px,
+    32px, 25px, 20px, 35px, 27px,
+    18px, 22px, 30px, 26px, 24px,
+    20px, 28px, 32px, 26px, 22px;
+    
+    filter: blur(3px);
+  }
+
+  /* Capa principal — caiguda uniforme */
+  body::after {
+  animation: neu25 12s linear infinite;
+  filter: blur(3px);
+  }
+
+  /* Segona capa — mateixos flocs però amb retràs (efecte aleatori) */
+  body::before {
+  animation: neu25 12s linear infinite;
+  animation-delay: -6s; /* mig cicle, efecte natural sense HTML */
+  opacity: 0.7;         /* perquè no es noti duplicat */
+  }
+
+  /* =============================
+      ANIMACIÓ SUAVITZADA
+  ============================= */
+
+  @keyframes neu25 {
+
+  /* posicions inicials */
+  0% { background-position:
+    3% -10%,   12% -40%,  20% -25%,  28% -60%,  35% -15%,
+    42% -45%,  50% -20%,  58% -70%,  65% -35%,  72% -55%,
+    80% -30%,  88% -10%,  10% -80%,  25% -95%,  40% -75%,
+    55% -90%,  70% -110%, 85% -60%, 95% -85%, 15% -130%,
+    30% -140%, 45% -115%, 60% -125%, 75% -150%, 90% -170%;
+  }
+
+  /* Caiguda fins a meitat amb vent */
+  50% { background-position:
+    5% 40%,    10% 25%,   23% 20%,   30% 55%,   37% 35%,
+    40% 50%,   53% 45%,   60% 30%,   67% 65%,   70% 40%,
+    83% 55%,   90% 50%,   12% 15%,   28% -5%,   43% 25%,
+    58% 10%,   73% 0%,    88% 30%,   95% 5%,    18% 45%,
+    33% 25%,   48% 10%,   63% 40%,   78% 20%,   93% 35%;
+  }
+
+  /* Final: MOLT menys recorregut → caiguda lenta constant */
+  100% { background-position:
+    5% 95%,    12% 110%,  20% 105%,  28% 120%,  35% 100%,
+    42% 115%,  50% 108%,  58% 125%,  65% 112%,  72% 130%,
+    80% 115%,  88% 100%,  10% 135%,  25% 145%,  40% 130%,
+    55% 140%,  70% 150%,  85% 120%,  95% 135%,  15% 155%,
+    30% 165%,  45% 150%,  60% 160%,  75% 170%,  90% 180%;
+  }
+}
+
+  
