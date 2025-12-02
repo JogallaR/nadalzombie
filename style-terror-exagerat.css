@@ -35,7 +35,7 @@
     font-size: 25px;
     line-height: 1.5;
     text-align: center;
-    background-image: url('fons.jpg');
+    background-image: url('img/fons.jpg');
     
     background-size: cover;
     background-attachment: fixed;
@@ -54,7 +54,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('fons.jpg') center/cover no-repeat;
+    background: url('img/fons.jpg') center/cover no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
@@ -291,7 +291,7 @@
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: url('sang.png') center/cover no-repeat;
+    background: url('img/sang.png') center/cover no-repeat;
     opacity: 0;              /* invisible per defecte */
     transition: opacity 0.5s ease;  /* animació suau */
     pointer-events: none;    /* no interfereix amb el hover */
@@ -334,7 +334,7 @@
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: url('sang.png') center/cover no-repeat;
+    background: url('img/sang.png') center/cover no-repeat;
     opacity: 0;                /* invisible per defecte */
     transition: opacity 0.5s ease; /* aparició suau */
     pointer-events: none;      /* no interfereix amb hover ni clics */
@@ -403,7 +403,7 @@
     z-index: 1000;
     width: 80px;
     height: 80px;
-    background: url('tux.png') no-repeat center center;
+    background: url('img/tux.png') no-repeat center center;
     background-size: contain;
     text-indent: -9999px;
     cursor: pointer;
@@ -475,11 +475,11 @@
   z-index: 9999;
 
   background-image:
-    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'),
-    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'),
-    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'),
-    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'),
-    url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png'), url('floc.png');
+    url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'),
+    url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'),
+    url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'),
+    url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'),
+    url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png'), url('img/floc.png');
 
   background-repeat: no-repeat;
 
